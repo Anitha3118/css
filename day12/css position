@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position Assignment</title>
+
+    <style>
+        /* Task 1: Profile Header */
+        .banner {
+            height: 200px;
+            background-color: lightblue;
+            position: relative;
+        }
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            background-color: pink;
+            position: absolute;
+            left: 0;
+            bottom: -40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Task 2: Centered Block */
+        .box {
+            width: 50%;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 60px auto;
+            display: block;
+        }
+
+        /* Task 3: Fixed Notification */
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .content {
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Task 1-->
+    <h2>Task 1: Profile Header</h2>
+
+    <div class="banner">
+        <div class="profile-pic">Profile</div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Task 2 -->
+    <h2>Task 2: Centered Block</h2>
+
+    <div class="box">
+        This is a centered box.
+    </div>
+
+    <!-- Task 3 -->
+    <h2>Task 3: Pinned Notification</h2>
+
+    <div class="content">
+        <p>This is some content on the page.</p>
+        <p>CSS is used to style HTML elements.</p>
+        <p>Position properties are used to control the location of elements.</p>
+        <p>css is used for styling.</p>
+        <p>Keep scrolling down to observe the notification.</p>
+        <p>java is a programming language</p>
+        <p>python is a programming language</p>
+        <p>dot net is a programming language.</p>
+        <p>More content here...</p>
+        <p>More content here...</p>
+    </div>
+    <div class="notification">
+        Update Available.
+    </div>
+
+</body>
+</html>
