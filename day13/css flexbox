@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 13 - CSS Flexbox Assignments</title>
+    <style>
+        /* Task 1: Center a Box */
+        .center-container {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+        .center-box {
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Task 2: Horizontal Navigation Bar */
+        .horizontal-nav {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: lightgray;
+            padding: 15px;
+        }
+        .horizontal-nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        /* Task 3: Vertical Navigation Bar */
+        .vertical-nav {
+            width: 200px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .vertical-nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        /* Task 4: Card Layout */
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .card {
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Task 5: Card Row with Wrapping */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            width: 150px;
+            height: 120px;
+            background-color: lightyellow;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task 1: Center a Box</h2>
+
+    <div class="center-container">
+        <div class="center-box">
+            Center Box
+        </div>
+    </div>
+
+    <h2>Task 2: Horizontal Navigation Bar</h2>
+
+    <nav class="horizontal-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2>Task 3: Vertical Navigation Bar</h2>
+
+    <nav class="vertical-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+    <h2>Task 4: Card Layout</h2>
+
+    <div class="card-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+    </div>
+
+    <h2>Task 5: Card Row with Wrapping</h2>
+
+    <div class="product-container">
+        <div class="product-card">Product 1</div>
+        <div class="product-card">Product 2</div>
+        <div class="product-card">Product 3</div>
+        <div class="product-card">Product 4</div>
+        <div class="product-card">Product 5</div>
+        <div class="product-card">Product 6</div>
+    </div>
+</body>
+</html>
